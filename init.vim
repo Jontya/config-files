@@ -18,12 +18,15 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'morhetz/gruvbox'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lervag/vimtex'
+Plug 'smolck/command-completion.nvim'
 
 set encoding=utf-8
 
 call plug#end()
 
 colorscheme gruvbox
+
+lua require('command-completion').setup()
 
 set guifont=Roboto\ Mono\ 10
 
