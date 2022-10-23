@@ -2,7 +2,7 @@ set number
 set smarttab
 set cindent
 set tabstop=4
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 
 call plug#begin('~/.config/nvim/plugged')
