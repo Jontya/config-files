@@ -32,6 +32,8 @@ endif
 
 set encoding=utf-8
 
+nmap <F6> :NERDTreeToggle<CR>
+
 call plug#end()
 
 colorscheme gruvbox
