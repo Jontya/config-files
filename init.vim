@@ -20,6 +20,8 @@ Plug 'morhetz/gruvbox'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lervag/vimtex'
 
+call plug#end()
+
 if has('nvim')
   function! UpdateRemotePlugins(...)
     let &rtp=&rtp
