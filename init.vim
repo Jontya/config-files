@@ -4,6 +4,7 @@ set cindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -17,7 +18,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'morhetz/gruvbox'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'rstacruz/vim-closer'
 Plug 'lervag/vimtex'
 
 if has('nvim')
