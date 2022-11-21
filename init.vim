@@ -5,6 +5,10 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+set smartindent
+set indentexpr=
+set encoding=UTF-8
+set guifont=DoridSansMono\ Nerd\ Font\ 11
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -19,6 +23,10 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'morhetz/gruvbox'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lervag/vimtex'
+Plug 'TimUntersberger/neogit'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -46,4 +54,4 @@ call wilder#setup({'modes': [':', '/', '?']})
 
 source ~/.config/nvim/plug-config/vimtex.vim
 source ~/.config/nvim/plug-config/coc.vim
-
+source ~/.config/nvim/plug-config/airline.vim
