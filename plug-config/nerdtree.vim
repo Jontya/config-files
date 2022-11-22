@@ -1,1 +1,1 @@
-nmap <F6> :NerdTreeToggle<CR>
+nmap <F6> :NERDTreeToggle<CR>
