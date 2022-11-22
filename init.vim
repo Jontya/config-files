@@ -1,14 +1,14 @@
 set number
+set relativenumber
 set smarttab
 set cindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
 set indentexpr=
 set encoding=UTF-8
-set guifont=DoridSansMono\ Nerd\ Font\ 11
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -30,28 +30,9 @@ Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
-if has('nvim')
-  function! UpdateRemotePlugins(...)
-    let &rtp=&rtp
-    UpdateRemotePlugins
-  endfunction 
-  Plug 'gelguy/wilder.nvim', { 'do': function('UpdateRemotePlugins') }
-else
-  Plug 'gelguy/wilder.nvim'
-endif
-
-set encoding=utf-8
-
-nmap <F6> :NERDTreeToggle<CR>
-
-call plug#end()
-
 colorscheme gruvbox
-
-set guifont=Roboto\ Mono\ 10
-
-call wilder#setup({'modes': [':', '/', '?']})
 
 source ~/.config/nvim/plug-config/vimtex.vim
 source ~/.config/nvim/plug-config/coc.vim
 source ~/.config/nvim/plug-config/airline.vim
+source ~/.config/nvim/plug-config/nerdtree.vim
