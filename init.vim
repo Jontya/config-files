@@ -27,6 +27,7 @@ Plug 'TimUntersberger/neogit'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
